@@ -13,12 +13,11 @@ use tinybrain;
 
 fn main() {
     let result = tinybrain::process(
-        "
+    "
     ++++++++[>++++[>++>+++>+++>+<<<<-]
     >+>+>->>+[<]<-]>>.>---.+++++++..++
     +.>>.<-.<.+++.------.--------.>>+.
-    "
-        .to_owned(),
+    ".to_owned(),
     );
 
     println!("{}", String::from_utf8(result).unwrap());
