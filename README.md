@@ -12,13 +12,15 @@ Tinybrain is a small interpreter to execute `brainfuck` code. To learn more abou
 use tinybrain;
 
 fn main() {
-    let result = tinybrain.process("
+    let result = tinybrain::process(
+        "
     ++++++++[>++++[>++>+++>+++>+<<<<-]
     >+>+>->>+[<]<-]>>.>---.+++++++..++
-    +.>>.<-.<.+++.------.--------.>>+.>
-    ++.
-    ");
+    +.>>.<-.<.+++.------.--------.>>+.
+    "
+        .to_owned(),
+    );
 
-    println!("{}", result);
+    println!("{}", String::from_utf8(result).unwrap());
 }
 ```
