@@ -1,6 +1,6 @@
 [package]
 name = "tinybrain"
-version = "0.1.0"
+version = "0.1.1"
 description = "A brainfuck interpreter written in Rust"
 keywords = ["brainfuck"]
 authors = ["Russell Wong"]
