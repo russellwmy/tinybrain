@@ -1,0 +1,13 @@
+[package]
+name = "tinybrain"
+version = "0.1.0"
+description = "A brainfuck interpreter written in Rust"
+keywords = ["brainfuck"]
+authors = ["Russell Wong"]
+homepage = "https://github.com/russellwmy/tinybrain"
+repository = "https://github.com/russellwmy/tinybrain"
+license = "MIT"
+edition = "2021"
+
+
+[dependencies]
